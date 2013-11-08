@@ -1,4 +1,3 @@
-
 name "ruby"
 version "2.0.0-p195"
 
@@ -36,4 +35,8 @@ build do
 
   command "make -j #{max_build_jobs}", :env => env
   command "make install", :env => env
+end
+
+build do
+  gem "install bundler"
 end
