@@ -12,6 +12,7 @@ build_iteration 1
 dependency "preparation"
 
 dependency "ruby"
+dependency "bundler"
 
 dependency "version-manifest"
 
