@@ -28,7 +28,7 @@ build do
            "--prefix=#{install_dir}/embedded",
            "--with-out-ext=fiddle",
            "--enable-shared",
-           "--enable-libedit",
+#           "--enable-libedit",
            "--with-ext=psych",
            "--disable-install-doc",
            "--with-opt-dir=#{install_dir}/embedded"].join(" "), :env => env
