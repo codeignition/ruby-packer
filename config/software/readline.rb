@@ -4,7 +4,7 @@ version "6.2"
 dependency "libgcc"
 
 source :url => "ftp://ftp.gnu.org/gnu/readline/readline-#{version}.tar.gz",
-       :md5 => "e50f6a7afb4de00c81650f7b1a0f5aea"
+       :md5 => "67948acb2ca081f23359d0256e9a271c"
 
 relative_path "readline-#{version}"
 
