@@ -3,7 +3,7 @@ version "2.0.0-p195"
 
 dependency "zlib"
 dependency "ncurses"
-dependency "libedit"
+dependency "readline"
 dependency "openssl"
 dependency "libyaml"
 dependency "libiconv"
