@@ -18,5 +18,5 @@ task :publish do
   package       = "ruby-2.0.0_p195-1.el6.x86_64.rpm"
   package_path = "./pkg/#{package}"
 
-  p directory.files.create(key: package, body: File.open(package_path), public: false)
+  p directory.files.create(key: "ruby/#{package}", body: File.open(package_path), public: false)
 end
