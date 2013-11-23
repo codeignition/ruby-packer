@@ -18,5 +18,5 @@ task :publish, :package do |t, args|
   package      = Dir.open("./pkg").entries.select {|e| e[/^#{args.package}(.*)\.rpm$/]}.sort.last
   package_path = "./pkg/#{package}"
 
-  p directory.files.create(key: "ruby/#{package}", body: File.open(package_path), public: false)
+  p directory.files.create(key: "#{args.package.split('-').first}/#{package}", body: File.open(package_path), public: false)
 end
