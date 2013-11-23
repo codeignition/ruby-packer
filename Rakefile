@@ -15,8 +15,7 @@ task :publish, :package do |package|
 
   directory  = connection.directories.new( key: S3_BUCKET )
 
-  directory    = Dir.open("./pkg")
-  package      = directory.entries.select {|e| e[/^#{package}(.*)\.rpm$/]}.sort.last
+  package      = Dir.open("./pkg").entries.select {|e| e[/^#{package}(.*)\.rpm$/]}.sort.last
   package_path = "./pkg/#{package}"
 
   p directory.files.create(key: "ruby/#{package}", body: File.open(package_path), public: false)
