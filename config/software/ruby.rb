@@ -9,7 +9,7 @@ dependency "libyaml"
 dependency "libiconv"
 
 source :url => "http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-#{version}.tar.gz",
-       :md5 => "0672e5af309ae99d1703d0e96eff8ea5"
+       :md5 => "78282433fb697dd3613613ff55d734c1"
 
 relative_path "ruby-#{version}"
 
