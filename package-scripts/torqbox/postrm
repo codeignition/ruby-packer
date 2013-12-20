@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Perform necessary torqbox removal steps
+# after package is uninstalled.
+#
+
+echo "torqbox has been uninstalled!"
+
+exit 0

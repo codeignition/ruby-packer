@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Perform necessary jruby removal steps
+# after package is uninstalled.
+#
+
+echo "jruby has been uninstalled!"
+
+exit 0
