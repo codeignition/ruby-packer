@@ -1,25 +1,26 @@
 GIT
   remote: git://github.com/opscode/omnibus-software.git
-  revision: f0a6ab4e60d02e90e13a2fb2497ad8702ce2068f
+  revision: 2e9661de34c34d4aa30c467132d39c942afabc04
   branch: master
   specs:
     omnibus-software (0.0.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://production.cf.rubygems.org/
   specs:
     addressable (2.3.5)
     arr-pm (0.0.8)
       cabin (> 0)
-    backports (3.3.4)
+    backports (3.3.5)
     builder (3.2.2)
     cabin (0.6.1)
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
-    clamp (0.6.1)
+    clamp (0.6.3)
     coderay (1.0.9)
     excon (0.25.3)
-    ffi (1.9.0)
+    ffi (1.9.3)
+    ffi (1.9.3-java)
     fog (1.15.0)
       builder
       excon (~> 0.25.0)
@@ -31,47 +32,52 @@ GEM
       nokogiri (~> 1.5)
       ruby-hmac
     formatador (0.2.4)
-    fpm (0.4.42)
+    fpm (1.0.1)
       arr-pm (~> 0.0.8)
       backports (>= 2.6.2)
       cabin (>= 0.6.0)
       childprocess
       clamp (~> 0.6)
+      ffi
       ftw (~> 0.0.30)
       json (>= 1.7.7)
-    ftw (0.0.34)
+    ftw (0.0.39)
       addressable
       backports (>= 2.6.2)
       cabin (> 0)
       http_parser.rb (= 0.5.3)
     http_parser.rb (0.5.3)
+    http_parser.rb (0.5.3-java)
     ipaddress (0.8.0)
-    json (1.8.0)
+    json (1.8.1)
+    json (1.8.1-java)
     method_source (0.8.2)
     mime-types (1.25)
     mini_portile (0.5.0)
-    mixlib-cli (1.3.0)
-    mixlib-config (1.1.2)
+    mixlib-cli (1.4.0)
+    mixlib-config (2.1.0)
     mixlib-log (1.6.0)
-    mixlib-shellout (1.2.0)
+    mixlib-shellout (1.3.0)
     multi_json (1.7.9)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.6.8)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
-    ohai (6.18.0)
+    nokogiri (1.6.0-java)
+      mini_portile (~> 0.5.0)
+    ohai (6.20.0)
       ipaddress
       mixlib-cli
       mixlib-config
       mixlib-log
       mixlib-shellout
-      systemu
+      systemu (~> 2.5.2)
       yajl-ruby
-    omnibus (1.2.0)
-      fpm (~> 0.4.33)
-      mixlib-config (~> 1.1.2)
-      mixlib-shellout (~> 1.0)
+    omnibus (1.3.0)
+      fpm (~> 1.0.0)
+      mixlib-config (~> 2.1.0)
+      mixlib-shellout (~> 1.3.0)
       ohai (>= 0.6.12)
       rake (>= 0.9)
       thor (>= 0.16.0)
@@ -80,20 +86,30 @@ GEM
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
-    rake (10.1.0)
+    pry (0.9.12.2-java)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+      spoon (~> 0.0)
+    rake (10.1.1)
+    rb-readline (0.5.0)
     ruby-hmac (0.4.0)
     slop (3.4.6)
+    spoon (0.0.4)
+      ffi
     systemu (2.5.2)
     thor (0.18.1)
     uber-s3 (0.2.4)
       mime-types (~> 1.17)
-    yajl-ruby (1.1.0)
+    yajl-ruby (1.2.0)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
   fog
-  omnibus (~> 1.2.0)
+  omnibus (~> 1.3.0)
   omnibus-software!
   pry
+  rb-readline
