@@ -1,5 +1,5 @@
 name "ruby"
-version "2.0.0-p353"
+version "2.1.0"
 
 dependency "zlib"
 dependency "ncurses"
@@ -8,8 +8,8 @@ dependency "openssl"
 dependency "libyaml"
 dependency "libiconv"
 
-source :url => "http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-#{version}.tar.gz",
-       :md5 => "78282433fb697dd3613613ff55d734c1"
+source :url => "http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-#{version}.tar.gz",
+       :md5 => "9e6386d53f5200a3e7069107405b93f7"
 
 relative_path "ruby-#{version}"
 
