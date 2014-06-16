@@ -6,5 +6,5 @@ dependency "ruby"
 
 build do
   gem "install puma -v 2.7.1"
-  gem "install bundler -v "
+  gem "install bundler "
 end
