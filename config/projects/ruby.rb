@@ -5,7 +5,7 @@ homepage "sinisterlight.com"
 
 replaces        "ruby"
 install_path    "/opt/ruby"
-build_version   "2.1.0"
+build_version   ENV['RUBY_VERSION']
 build_iteration 1
 
 dependency "preparation"

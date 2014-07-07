@@ -1,5 +1,5 @@
 name "ruby"
-version "2.1.0"
+version ENV['RUBY_VERSION']
 
 dependency "zlib"
 dependency "ncurses"
@@ -8,10 +8,11 @@ dependency "openssl"
 dependency "libyaml"
 dependency "libiconv"
 
-source :url => "http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-#{version}.tar.gz",
-       :md5 => "9e6386d53f5200a3e7069107405b93f7"
 
-relative_path "ruby-#{version}"
+source :url => ENV['RUBY_DOWNLOAD_URL'],
+       :md5 => ENV['MD5_RUBY']
+
+relative_path "ruby_#{ENV['RUBY_VERSION']}"
 
 env = {
         "CFLAGS" => "-I#{install_dir}/embedded/include -O3 -g -pipe",
