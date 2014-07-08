@@ -12,7 +12,7 @@ dependency "libiconv"
 source :url => ENV['RUBY_DOWNLOAD_URL'],
        :md5 => ENV['MD5_RUBY']
 
-relative_path "ruby_#{ENV['RUBY_VERSION']}"
+relative_path "ruby-#{ENV['RUBY_VERSION']}"
 
 env = {
         "CFLAGS" => "-I#{install_dir}/embedded/include -O3 -g -pipe",
