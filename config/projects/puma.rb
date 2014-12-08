@@ -5,7 +5,7 @@ homepage "sinisterlight.com"
 
 replaces        "puma"
 install_path    "/opt/puma"
-build_version   "2.7.1"
+build_version   ENV['PUMA_VERSION']
 build_iteration 1
 
 dependency "preparation"
