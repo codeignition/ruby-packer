@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/opscode/omnibus-software.git
+  remote: https://github.com/opscode/omnibus-software.git
   revision: 2e9661de34c34d4aa30c467132d39c942afabc04
   branch: master
   specs:
@@ -11,7 +11,7 @@ GEM
     addressable (2.3.5)
     arr-pm (0.0.8)
       cabin (> 0)
-    backports (3.3.5)
+    backports (3.6.4)
     builder (3.2.2)
     cabin (0.6.1)
     childprocess (0.3.9)
