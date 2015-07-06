@@ -7,7 +7,8 @@ dependency "readline"
 dependency "openssl"
 dependency "libyaml"
 dependency "libiconv"
-
+dependency "libffi"
+dependency "gdbm"
 
 source :url => ENV['RUBY_DOWNLOAD_URL'],
        :md5 => ENV['MD5_RUBY']
